@@ -98,11 +98,86 @@ for num in salary :
 
 print (smallest)
 
-
+#sum
 salary = [5000, 25000, 85000, 300, 65000]
 total = 0
 for num in salary :
 total = total + num
 print (total)
+
+
+#whiled loop
+count = 5
+while count <= 10:
+   print (count)
+   count = count + 2
+
+count = 3
+while count <= 10:
+    print (count)
+    count = count + 3
+
+count = 2
+while count <= 10 :
+    print (count)
+    count = count + 4
+
+count = 8
+while count >= 6:
+    print (count)
+    count = count / 2
+
+count = 15
+while count >=5 :
+    print (count)
+    count = count + 1
+
+
+students = [
+    {"Name" : "harsha" , "marks" : 95 },
+    { "Name" : "ravi" , "marks" : 70 },
+    {"Name" : "jeva" , "marks" : 30 },
+    {"Name" : "ravai" , "marks" : 45 },
+
+]
+for student in students:
+    if student["marks"] <= 35 :
+         continue
+
+        print ("certificate send to : ", student["Name"])
+
+
+ for i in  range(1, 11):
+     if i == 5 :
+         continue
+
+      print (i)
+
+
+
+for H in range (1, 15) :
+    if H == 10:
+        break
+     print (H)
+
+#Skip numbers divisible by 3 using continue
+for Y in range (1 , 10) :
+    if Y % 3 == 0:
+        continue
+    print (Y)
+
+
+#
+# The first question is: write a program that takes a number and prints whether it is positive, negative, or zero using if, elif, and else
+
+num = int(input("enter a number : "))
+if num > 0 :
+     print(" the number is positive")
+elif num < 0 :
+     print ("the number is negative")
+else:
+     print (" the number is zero")
+
+
 
 
