@@ -1,4 +1,6 @@
 from random import choice
+from tarfile import GNU_FORMAT
+from unittest import case
 
 age = int(input("enter the age : "))
 if age >= 20 :
@@ -177,6 +179,113 @@ elif num < 0 :
      print ("the number is negative")
 else:
      print (" the number is zero")
+
+
+#Write a program to check whether a student passed or failed.
+
+students = [
+    {"name" : "ravi" , "marks": 50},
+    {"name" : "raju" , "marks" : 65},
+    {"name": "priya", "marks": 90},
+    {"name": "arun", "marks": 30},
+    {"name": "hari", "marks": 20},
+    {"name": "rupesh", "marks": 50},
+]
+for student in students :
+
+    if student[ "marks"] >= 35:
+         print( student["name"] ," pased ")
+    else :
+       print ( student["name"] ," failed ")
+
+# numbers from 1 to 100 using a for loop. Want to try writing that next, step by step, like we just did?
+
+for h in range (1, 100):
+    print ( h )
+
+#Print numbers from 100 down to 1 using a while loop.
+
+num = 100
+while num >= 1:
+    print(num)
+    num = num -1
+
+
+
+#Find the sum of numbers from 1 to 100.
+
+sum = 0
+for num in range (1, 101):
+    sum = sum + num
+print ("total ; ", sum)
+
+
+# Find a student in a list. I
+students = [ "priyanka" , "harsha" , "ravi", "raju" ]
+name = "priyanka"
+if name in students :
+    print ("student found")
+else :
+    print ( "student not found")
+
+#
+students = [ "priyanka" , "harsha" , "ravi", "raju" ]
+name = "suresh"
+if name in students:
+    print ("student found")
+else :
+    print ("student not found")
+
+
+# Create a calculator using match case.
+num1 = float(input("enter first number : "))
+num2 = float (input("enter second number: "))
+
+op = input(" enter operator (+, -, *, /, %, //): ")
+
+match op :
+    case "+" :
+        print ("result : ", num1 + num2)
+    case "-" :
+        print ( "result :" , num1 - num2)
+    case "*" :
+        print ( "result :" , num1 * num2)
+    case "/" :
+        print ( "result :" , num1 / num2)
+        if num2 != 0:
+          print("result :", num2 / num1)
+        else:
+         print("Cannot divide by zero")
+    case _:
+         print ("invaled operator")
+
+# Write a program to print all even numbers from 1 to 50.
+for N in range (1, 51):
+    if N % 2 == 0:
+        print(N)
+#Write a program to stop searching when a particular product is found using break.
+products = ["laptop", "mobile", "tablet", "keyboard"]
+target = input("enter target : ")
+for product in products :
+    if product == target:
+       print("product found :" , product)
+       break
+    else :
+        print ("product not found")
+
+products = ["Fan", "light", "specker", "Gun"]
+target = "Gun"
+for product in products :
+    if product == target:
+        print("product found :" , product)
+        break
+
+
+
+
+
+
+
 
 
 
